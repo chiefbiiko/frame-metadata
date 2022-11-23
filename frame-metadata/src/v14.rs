@@ -270,6 +270,12 @@ pub enum StorageHasher {
 	Twox64Concat,
 	/// Identity hashing (no hashing).
 	Identity,
+	/// 128-bit Blake3 hash.
+	Blake3_128,
+	/// 256-bit Blake3 hash.
+	Blake3_256,
+	/// A 128-bit Blake3 hash suffixed with plaintext.
+	Blake3_128Concat,
 }
 
 /// A type of storage value.
